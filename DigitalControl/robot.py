@@ -521,22 +521,22 @@ if __name__ == "__main__":
         CartesianTarget(pos=[0.0, -1.0, 0.5], orient=[-math.pi / 2, -math.pi / 2,-math.pi / 2], ts=2.0),
         CartesianTarget(pos=[0.0, 0.0, 0.5], orient=[-math.pi / 2, -math.pi / 2, -math.pi / 2], ts=2.0)
     ]
-    tr2 = [
-        CartesianTarget(pos=[1, 0.0, 0.5], orient=[math.pi / 2, math.pi / 2, math.pi / 2], ts=2.0),
-        CartesianTarget(pos=[0, -1.0, 0.5], orient=[math.pi / 2, math.pi / 2, math.pi / 2], ts=2.0),
-    ]
-    tr3 = [
-        CartesianTarget(pos=[0, -1.0, 0.5], orient=[math.pi / 2, math.pi / 2, math.pi / 2], ts=2.0),
-        CartesianTarget(pos=[0.0, -1.0, 0.1], orient=[math.pi, math.pi, math.pi], ts=2.0),
-        CartesianTarget(pos=[0.0, -1.0, 0.5], orient=[90,90,90], ts=2.0),
-        CartesianTarget(pos=[0.0, 0.0, 0.5], orient=[90,90,90], ts=2.0)
+    # tr2 = [
+    #     CartesianTarget(pos=[1, 0.0, 0.5], orient=[math.pi / 2, math.pi / 2, math.pi / 2], ts=2.0),
+    #     CartesianTarget(pos=[0, -1.0, 0.5], orient=[math.pi / 2, math.pi / 2, math.pi / 2], ts=2.0),
+    # ]
+    # tr3 = [
+        # CartesianTarget(pos=[0, -1.0, 0.5], orient=[math.pi / 2, math.pi / 2, math.pi / 2], ts=2.0),
+        # CartesianTarget(pos=[0.0, -1.0, 0.1], orient=[math.pi, math.pi, math.pi], ts=2.0),
+        # CartesianTarget(pos=[0.0, -1.0, 0.5], orient=[90,90,90], ts=2.0),
+        # CartesianTarget(pos=[0.0, 0.0, 0.5], orient=[90,90,90], ts=2.0)
 
         # CartesianTarget(pos=[0, 0, 1], orient=[0,0,0], ts=6.0)
         # CartesianTarget(pos=[-1, 0, 0.5], orient=[0,0,0], ts=2.0),
         # CartesianTarget(pos=[-1, 0, 0.1], orient=[0,0,0], ts=2.0),
         # CartesianTarget(pos=[-1, 1, 0.5], orient=[0,0,0], ts=2.0),
         # CartesianTarget(pos=[0, 1, 1], orient=[0,0,0], ts=2.0)
-    ]
+    # ]
     robot.set_cart_traj('fifth-order', tr1)
     # robot.set_cart_traj_lin('five', tr2)
     # robot.set_cart_traj_lin('five', tr3)
